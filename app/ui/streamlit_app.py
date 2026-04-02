@@ -10,6 +10,7 @@ from app.simulation.scenario_factory import SCENARIOS, ScenarioConfig, ScenarioF
 st.set_page_config(page_title="False-Green Dashboard Simulator", layout="wide")
 st.title("False-Green Dashboard Simulator")
 st.caption("Deterministic simulation of green-looking dashboards hiding failure drift.")
+st.link_button("Home", "https://ops-demo-launchpad-9fd4e1ed9e00.herokuapp.com/")
 
 scenario = st.selectbox("Scenario", sorted(SCENARIOS))
 intensity = st.slider("Intensity", 0.2, 1.0, 0.7, 0.05)
